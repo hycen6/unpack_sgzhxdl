@@ -1,0 +1,7 @@
+*.zip
+miniRes
+.DS_Store
+**.atlas
+**.skel
+**.png
+!static/*.png
