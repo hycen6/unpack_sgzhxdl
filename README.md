@@ -152,7 +152,7 @@ python search_skel_content.py ./skels "biaoqing_jiangdongzhizhi" "biaoqing_yansu
     size: 300,169
     ```
     > 尺寸为2017,1937的图片重命名为：skeleton.png
-    <br>
+    
     > 尺寸为300,169的图片重命名为：skeleton1.png
 
 2. **命名其他文件：**
@@ -201,4 +201,5 @@ A: 本工具提取的资源格式标准，支持主流Spine软件：
 - 建议在备份原始文件的情况下进行操作
 
 通过以上方法，您就能成功找到并还原喜欢的角色动态立绘！
+
 动态立绘可用作个人搜藏/桌面动态壁纸/桌宠。
