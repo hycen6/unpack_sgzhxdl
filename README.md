@@ -16,16 +16,8 @@
   python3 --version
   ```
 
-### 必读文档
-- **[AboutArtsResource.md](./AboutArtsResource.md)**：详细说明了如何从游戏中提取原始美术资源
-  - 包含完整的资源提取教程
-  - 支持安卓设备和模拟器
-  - 涵盖文件传输和目录设置
-
 ### 重要提醒
 - 请先按照 [AboutArtsResource.md](./AboutArtsResource.md) 的指引提取游戏美术资源
-- 确保已获得包含 `miniRes` 目录的完整资源文件
-
 
 ## 功能特性
 
@@ -72,9 +64,9 @@ python move_files_by_ext_to_target_dir.py ./miniRes .skel ../skels
 **⚠️注意⚠️**
 - 示例中没有将图片归类，原因：
    - 图片数量非常庞大，归类到一起将很难找到需要的立绘
-- 脚本的目标目录是基于源目录（即工作目录miniRes）
+- 脚本的目标目录是基于源目录（即工作目录`miniRes`或`udp`）
 - `../atlas` 和 `../skels` 中的`..`表示上一层目录
-- 归类不要存放在工作目录（即miniRes），以免造成重复处理甚至发生死循环
+- 归类不要存放在工作目录（即`miniRes`或`udp`），以免造成重复处理甚至发生死循环
 
 ### 第三步：重命名PNG文件
 
@@ -101,7 +93,7 @@ python rename_png_files.py ./miniRes
 
 **注意**
 - 存储文件夹指的是您存放还原资源的目录，例如：`三幻资源提取/赤焰周瑜`。
-- 存储文件夹***不建议**放置在miniRes目录（即工作目录）内，会降低后续查找其他立绘的准确性。
+- 存储文件夹***不建议**放置在工作目录（`miniRes`或`udp`）内，会降低后续查找其他立绘的准确性。
 
 ### 步骤2：查找对应的Atlas文件
 
