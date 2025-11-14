@@ -1,20 +1,24 @@
-# 三幻游戏美术资源提取指南
+# 三幻美术资源提取指南
 
-本文档详细介绍如何从三幻游戏中提取美术资源，为后续的Spine动态立绘还原做准备。
+本文档详细介绍如何从三幻中提取美术资源，为后续的Spine动态立绘还原做准备。
 
 ## 📁 资源目录说明
 
 ### 目标目录位置
 ```
 /data/data/com.aligames.star.sgzhxdl.aligames/files/miniRes
+/data/data/com.aligames.star.sgzhxdl.aligames/files/udp
 ```
 
 **⚠️ 重要说明：**
 - `com.aligames.star.sgzhxdl.aligames` 为包名，请以实际安装的包名为准（此处以九游版本为例）
 - 不同渠道的包名不同，请在设备中确认实际包名
+- `miniRes`为安装包版本所包含的美术资源
+- `udp`为增量更新的美术资源（新皮肤、武将等）
+
 
 ### 目录结构
-美术资源目录（`miniRes/`）包含以下内容：
+美术资源目录（`miniRes、udp`）包含以下内容：
 
 - ✅ **美术资源文件** - 本项目需要处理的Spine动画相关文件
 - ❌ **cri_res目录** - 包含CG、主城动画壁纸等视频资源（.usm）和音频文件（.acb、.awb）
@@ -23,7 +27,7 @@
 
 ![美术资源目录](./static/arts_dir.png)
 
-## 🔧 提取方法（安卓版本）
+## 🔧 提取方法（安卓资源）
 
 ### 方案选择
 - **推荐方案**：使用MuMu模拟器（无需root手机）
@@ -77,9 +81,10 @@
 **macOS模拟器用户：**
 - 共享文件夹位置：`'/Users/{用户名}/Library/Application Support/com.netease.mumu.nemux/MuMuPlayerProShared.localized'`
 - 将 `{用户名}` 替换为您的实际用户名
-- 可使用 App Cleaner & Uninstaller 等工具快速定位MuMu共享文件夹
+- 打开访达，使用快捷键 `Command + Shift + G` 打开前往文件夹窗口
+<!-- - 如果你的共享文件夹不是此目录（一般不会），可使用 App Cleaner & Uninstaller 等工具快速定位MuMu共享文件夹 -->
 
-![mac共享文件夹位置](./static/mac_shared_dir1.png)
+<!-- ![mac共享文件夹位置](./static/mac_shared_dir1.png) -->
 ![mac共享文件夹位置](./static/mac_shared_dir2.png)
 ![mac共享文件夹位置](./static/mac_shared_dir3.png)
 
@@ -102,6 +107,8 @@
 
 ![删除cri_res目录](./static/remove_cri_res.png)
 
+以上例举提取miniRes目录过程，提取udp过程相同，请自行操作。
+
 ## 🔗 后续步骤
 
-完成美术资源提取后，请继续阅读 [README.md](./README.md) 了解如何使用本工具进行Spine动态立绘还原。
+完成美术资源提取后，请继续阅读 [README.md](./README.md)了解如何使用本工具进行Spine动态立绘还原。
