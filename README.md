@@ -1,5 +1,8 @@
 # 三幻Spine动态立绘还原解决方案
 
+> **⚠️ 重要提醒：本项目已停止维护**
+> 推荐使用性能更优更易用的 Rust CLI 重构版本：[unpack_sgzhxdl_cli](https://github.com/hycen6/unpack_sgzhxdl_cli)
+
 本项目提供了一套完整的三幻Spine动态立绘还原解决方案，
 帮助您从游戏文件中还原美术资源并重建动态立绘。
 
